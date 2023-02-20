@@ -1,0 +1,18 @@
+{
+    "dongVat":[
+        {
+            "id":1,
+            "ten":"con cho",
+            "canNang":60,
+            "loai":"hussssky",
+            "gioiTinh":"duc"
+        },
+        {
+            "id":2,
+            "ten":"con meo",
+            "canNang":3,
+            "loai":"nataasha",
+            "gioiTinh":"cai"
+        }
+    ]
+}

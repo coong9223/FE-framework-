@@ -1,0 +1,14 @@
+.container{
+    width: 700px;
+    height: auto;
+    margin: auto;
+    background-color: burlywood;
+    border-radius: 15px;
+    padding: 30px;
+}
+.head{
+    width: 200px;
+    height: auto;
+    margin: auto;
+    padding: auto;
+}

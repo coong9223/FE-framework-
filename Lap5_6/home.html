@@ -1,0 +1,51 @@
+<form class="row g-3 " method="post">
+  <div class="col-md-1">
+    <label for="" class="form-label">Id</label>
+    <input type="text" class="form-control" id="id" ng-model="id">
+  </div>
+  <div class="col-md-4">
+    <label for="" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" ng-model="name">
+  </div>
+  <div class="col-md-4">
+    <label for="" class="form-label">Price</label>
+    <input type="text" class="form-control" id="price" ng-model=price>
+  </div>
+  <div class="col-md-4">
+    <label for="" class="form-label">Color</label>
+    <input type="text" class="form-control" id="color" ng-model="color">
+  </div>
+  <div class="col-md-4">
+    <label for="" class="form-label">Type</label>
+    <input type="text" class="form-control" id="type" ng-model="type">
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" ng-click="AddSp()">Thêm</button>
+    <button type="submit" class="btn btn-primary" ng-click="UpdateSp()">Update</button>
+    <button type="submit" class="btn btn-primary" ng-click="DeleteSp()">Delete</button>
+  </div>
+</form>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Color</th>
+      <th scope="col">Type</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="t in listAo">
+      <th scope="row">{{t.id}}</th>
+      <td>{{t.name}}</td>
+      <td>{{t.price}}</td>
+      <td>{{t.color}}</td>
+      <td>{{t.type}}</td>
+     <td> <button type="button" class="btn btn-danger"ng-click="getById(t.id)">Chi tiết</button>
+      <button type="button" class="btn btn-danger">Xóa</button>
+    </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../AngularJS/js/angular.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body ng-app="myapp">
+    <div class="container" >
+    <div class="row" ng-controller="productcontroller">
+      <div class="col-md-3 col-3" ng-repeat="pro in products">
+        <div class="thumbnail">
+          <img class="sp"  src="{{pro.image}}" alt="Lights" style="width: 100%">
+            <div class="caption">
+              <p>
+                Mô tả: {{pro.moTa}}
+              </p>
+              <div class="container">
+                <p>
+                  Giá bán: {{pro.giaBan}}
+                </p>
+              </div>
+              <button style="border-color:red ;"><img src="" style="width: 20px;" alt="">Mua</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script>
+        function getList($scope){
+            var listProduct=[
+                {
+                    image:"./imgs/clothes-type1-02.jpg",
+                    moTa:"",
+                    giaBan:100000,
+                },
+                {
+                    image:"./imgs/clothes-type1-02.jpg",
+                    moTa:"",
+                    giaBan:100000,
+                },
+                {
+                    image:"./imgs/clothes-type1-02.jpg",
+                    moTa:"",
+                    giaBan:100000,
+                },
+                {
+                    image:"./imgs/clothes-type1-02.jpg",
+                    moTa:"",
+                    giaBan:100000,
+                },
+            ];
+            $scope.products=listProduct;
+        }
+        var app=angular.module("myapp",[]);
+        app.controller("productcontroller",getList);
+    </script>
+</body>
+</html>

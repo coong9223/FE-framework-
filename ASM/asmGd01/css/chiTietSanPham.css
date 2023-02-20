@@ -1,0 +1,77 @@
+.hotline1{
+    margin-top: 2px;   
+}
+.hotline1 a{
+    text-decoration: none;
+    color: white;
+}
+.a ul{
+    list-style: none;
+    margin-top: 2px;
+    
+}
+.a ul li{
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+.a ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;   
+}
+.a ul li a:hover{
+    background-color:rgb(17, 233, 78) ;
+    color: rgb(17, 242, 13);
+}
+header{
+   
+    width: auto;
+    height: 30px;
+    background-color:rgb(223, 211, 211);
+}
+.nav-item-tabs a{
+    color: white;
+    
+}
+.nav-item a{
+    color: black;
+}
+.container ul li a:hover{
+    background-color: red;
+    color: aliceblue;
+}
+.caption{
+    text-align: center;
+}
+.sale{
+    text-decoration: line-through;
+}
+.goc{
+    color: red;
+}
+.tilesale{
+    color: red;
+}
+.img-thumbnail{
+    margin-left: 85px;
+}
+.chucnang{
+    display: flex;
+}
+header{
+    background-color: rgb(235, 58, 58);
+}
+.nav nav-tabs{
+    color: white;
+}
+.background{
+    background-color:rgba(69, 72, 72, 0.992) ;
+}
+.text-reset{
+    text-decoration: none;
+}
+.foot{
+    background-color: rgb(242, 173, 173);
+    margin-top: 30px;
+}

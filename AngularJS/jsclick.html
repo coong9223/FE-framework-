@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="click">
+        <div ng-controller="pro">
+            <table>
+                <tr>
+                    <td>name</td>
+                    <td>likes</td>
+                    <td>dislikes</td>
+                </tr>
+                <tr>
+                    <td>{{test.name}}</td>
+                    <td>{{test.likes}}</td>
+                    <td>{{test.dislikes}}</td>
+                    <td>
+                        <button ng-click="like(test)">like</button>
+                    </td>
+                </tr>
+            </table>    
+        </div>
+</body>
+<script>
+    function clicks($scope){
+        var user={
+            name:"nguyễn thành công",
+            likes:0,
+            dislikes:0,
+        };
+        $scope.test=user;
+        $scope.like=function(user){
+            user.likes++;
+        };
+    }
+    var app=angular.module("click",[]);
+    app.controller("pro",clicks);
+    
+</script>
+</html>

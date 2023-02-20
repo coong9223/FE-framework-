@@ -1,0 +1,40 @@
+<div class="container">
+    <form method="post">
+        <div class="form-group" style="color:blue;">
+            <label for="">id</label>
+            <input class="form-control" id="id" ng-model="id">
+            <label for="">name</label>
+            <input class="form-control" id="name" ng-model="name">
+            <label for="">price</label>
+            <input class="form-control" id="price" ng-model="price">
+            <label for="">slTon</label>
+            <input class="form-control" id="slTon" ng-model="slTon">
+            <label for="">voucher</label>
+            <input class="form-control" id="voucher" ng-model="voucher">
+        </div>
+        <button type="submit" class="btn btn-primary" ng-click="onsubmit()">them</button>
+        <button type="submit" class="btn btn-primary" ng-click="UpdateSanpham()">update</button>
+    </form>
+</div>
+<table class="table">
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>price</td>
+        <td>slTon</td>
+        <td>voucher</td>
+    </tr>
+    <tbody ng-repeat="sp in listSanPham">
+        <tr>
+            <td>{{sp.id}}</td>
+            <td>{{sp.name}}</td>
+            <td>{{sp.price}}</td>
+            <td>{{sp.slTon}}</td>
+            <td>{{sp.voucher}}</td>
+            <td>
+                <button ng-click="GetbyID(sp.id)">chi tiet sp</button>
+                <button ng-click="GetbyID(sp.id)">xoa</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,42 @@
+<div class="container">
+    <form method="post">
+        <div class="form-group" style="color:blue;">
+            <h4>Id</h4>
+            <input class="form-control"  id="id"ng-model="id">
+            <h4>Tên sản phẩm</h4>
+            <input class="form-control"  id="TenSp"ng-model="TenSp">
+            <h4>Giá</h4>
+            <input class="form-control"  id="Gia"ng-model="Gia">
+            <h4>Số lượng tồn</h4>
+            <input class="form-control"  id="Soluongton"ng-model="Soluongton">
+            <h4>Giảm giá</h4>
+            <input class="form-control"  id="Giamgia"ng-model="Giamgia">
+        </div>
+        <button type="submit" class="btn btn-primary" ng-click="onsubmit()" >Thêm</button>
+        <button type="submit" class="btn btn-primary" ng-click="UpdateSanpham()" >Update</button>
+
+        
+    </form>
+</div>
+    <table class="table">
+        <tr>
+            <td>id</td>
+            <td>Tên sản phẩm</td>
+            <td>Giá bán</td>
+            <td>Số lượng tồn</td>
+            <td>Giảm giá</td>
+        </tr>
+        <tbody ng-repeat="sp in listSanpham">
+            <tr>
+                <td>{{sp.id}}</td>
+                <td>{{sp.TenSp}}</td>
+                <td>{{sp.Gia}}</td>
+                <td>{{sp.Soluongton}}</td>
+                <td>{{sp.Giamgia}}</td>
+                <td>
+                    <button ng-click="GetbyID()">Chi tiet sp</button>
+                    <button ng-click="Deletes()">Xóa</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>

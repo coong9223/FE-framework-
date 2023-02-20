@@ -1,0 +1,21 @@
+<div>
+    <table class="table">
+      <tr>
+        <td>id</td>
+        <td>Họ tên</td>
+        <td>Lớp</td>
+      </tr>
+      <tbody ng-repeat="sv in listSinhVien">
+        <tr>
+          <td>{{sv.id}}</td>
+          <td>{{sv.name}}</td>
+          <td>{{sv.lop}}</td>
+          <td>
+            <button>Sửa</button>
+            <button>Xoá</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
